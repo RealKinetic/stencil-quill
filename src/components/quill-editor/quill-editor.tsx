@@ -100,6 +100,8 @@ export class QuillEditorComponent implements ComponentDidLoad {
   editorChangeEvent: any;
 
   setEditorContent(value: any) {
+    const selection = this.quillEditor.getSelection();
+    console.log('selection');
     if (this.format === 'html') {
       const contents = this.quillEditor.clipboard.convert(value);
       this.quillEditor.setContents(contents, 'api');
@@ -113,6 +115,9 @@ export class QuillEditorComponent implements ComponentDidLoad {
       }
     } else {
       this.quillEditor.setText(value, 'api');
+    }
+    if (selection) {
+      this.quillEditor.setSelection(selection);
     }
   }
 
