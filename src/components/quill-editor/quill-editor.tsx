@@ -101,7 +101,6 @@ export class QuillEditorComponent implements ComponentDidLoad {
 
   setEditorContent(value: any) {
     const selection = this.quillEditor.getSelection();
-    console.log('selection');
     if (this.format === 'html') {
       const contents = this.quillEditor.clipboard.convert(value);
       this.quillEditor.setContents(contents, 'api');
