@@ -1,6 +1,6 @@
 {
   "name": "witful-quill-internal",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Quill custom element helper",
   "main": "dist/custom-elements/index.js",
   "types": "dist/custom-elements/index.js",
