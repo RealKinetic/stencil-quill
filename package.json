@@ -1,9 +1,15 @@
 {
   "name": "witful-quill-internal",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Quill custom element helper",
-  "main": "dist/custom-elements/index.js",
-  "types": "dist/custom-elements/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "jsnext:main": "dist/esm/index.js",
+  "types": "./dist/types/components.d.ts",
+  "collection": "./dist/collection/collection-manifest.json",
+  "unpkg": "dist/quill-components/quill-components.js",
   "files": [
     "dist/",
     "loader/"
